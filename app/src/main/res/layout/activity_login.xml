@@ -11,7 +11,7 @@
     <ImageView
             android:layout_width="140dp"
             android:layout_height="140dp" app:srcCompat="@drawable/logo" android:layout_centerHorizontal="true"
-            android:layout_alignParentTop="true" android:id="@+id/imageView" android:layout_marginTop="64dp"/>
+            android:layout_alignParentTop="true" android:id="@+id/imageView" android:layout_marginTop="28dp"/>
     <android.support.design.widget.TextInputEditText
             android:layout_width="200dp"
             android:layout_height="40dp"
@@ -22,8 +22,9 @@
             android:textSize="20dp"
             android:background="#a72bd1e4"
             android:drawableLeft="@drawable/ic_action_mail"
-            android:id="@+id/editTxtMail" android:hint="E-mail" android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"/>
+            android:id="@+id/editTxtMail" android:hint="E-mail"
+            android:layout_centerHorizontal="true" android:layout_alignParentTop="true"
+            android:layout_marginTop="219dp"/>
     <android.support.design.widget.TextInputEditText
             android:layout_width="200dp"
             android:layout_height="40dp"
@@ -35,7 +36,8 @@
             android:drawableLeft="@drawable/ic_action_lock"
             android:background="#a72bd1e4"
             android:layout_alignParentBottom="true" android:id="@+id/editTSenha"
-            android:layout_alignStart="@+id/editTxtMail" android:layout_marginBottom="231dp" android:hint="Senha"/>
+            android:layout_alignStart="@+id/editTxtMail" android:layout_marginBottom="223dp" android:hint="Senha"
+            android:layout_marginStart="-2dp"/>
     <android.support.design.button.MaterialButton
             android:text="Entrar"
             android:background="@color/colorAccent"
