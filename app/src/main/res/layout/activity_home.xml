@@ -24,8 +24,8 @@
             app:layout_anchor="@id/bottom_app_bar"
             android:layout_alignParentBottom="true" android:layout_marginBottom="35dp" android:layout_marginStart="20dp"
             android:layout_alignLeft="@+id/bottom_app_bar" android:layout_alignStart="@+id/bottom_app_bar"
-            android:layout_toStartOf="@+id/null" android:layout_marginRight="20dp" android:layout_marginEnd="20dp"
-            android:layout_toLeftOf="@+id/null"/>
+            android:layout_marginRight="20dp" android:layout_marginEnd="20dp"
+            />
 
     <android.support.design.widget.FloatingActionButton
             android:layout_width="wrap_content"
