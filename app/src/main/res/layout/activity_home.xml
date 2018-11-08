@@ -19,6 +19,7 @@
     <android.support.design.widget.FloatingActionButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:src="@drawable/ic_home_white_24dp"
             android:layout_marginLeft="20dp"
             app:layout_anchor="@id/bottom_app_bar"
     />
@@ -26,6 +27,7 @@
     <android.support.design.widget.FloatingActionButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:src="@drawable/ic_list_white_24dp"
             android:layout_marginLeft="80dp"
             app:layout_anchor="@id/bottom_app_bar"
     />
@@ -55,5 +57,47 @@
     >
 
     </android.support.design.bottomappbar.BottomAppBar>
+
+    <Button
+            android:text="Receitas"
+            android:layout_width="195dp"
+            android:layout_height="50dp"
+            android:id="@+id/buttonReceitas"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="0dp"
+    />
+
+    <Button
+            android:text="Despesas"
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:id="@+id/buttonDespesas"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="195dp"
+    />
+
+    <TextView
+            android:text="Saldo Atual"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="90dp"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/textView"
+    />
+
+    <TextView
+            android:text="R$0,00"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="90dp"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/textView2"
+    />
 
 </android.support.design.widget.CoordinatorLayout>
