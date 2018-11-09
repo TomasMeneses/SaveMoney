@@ -1,106 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_height="match_parent"
         tools:context=".HomeActivity"
+        android:orientation="vertical"
         android:background="@drawable/gradient" android:layout_width="match_parent">
 
-    <android.support.design.widget.FloatingActionButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:fabSize="normal"
-            android:src="@drawable/add_white_24dp"
-            app:layout_anchor="@id/bottom_app_bar"
-            android:layout_centerHorizontal="true" android:layout_alignParentBottom="true"
-            android:layout_marginBottom="27dp"/>
 
-    <android.support.design.widget.FloatingActionButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_home_white_24dp"
-            android:layout_marginLeft="20dp"
-            app:layout_anchor="@id/bottom_app_bar"
-            android:layout_alignParentBottom="true" android:layout_marginBottom="35dp" android:layout_marginStart="20dp"
-            android:layout_alignLeft="@+id/bottom_app_bar" android:layout_alignStart="@+id/bottom_app_bar"
-            android:layout_marginRight="20dp" android:layout_marginEnd="20dp"
-            />
+    <RelativeLayout
 
-    <android.support.design.widget.FloatingActionButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_list_white_24dp"
-            android:layout_marginLeft="80dp"
-            app:layout_anchor="@id/bottom_app_bar"
-            android:layout_alignParentBottom="true" android:layout_marginBottom="35dp"/>
-
-    <android.support.design.widget.FloatingActionButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_person_black_24dp"
-            android:layout_marginLeft="260dp"
-            app:layout_anchor="@id/bottom_app_bar"
-            android:layout_alignParentBottom="true" android:layout_marginBottom="39dp"/>
-
-    <android.support.design.widget.FloatingActionButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_settings_black_24dp"
-            android:layout_marginLeft="320dp"
-            app:layout_anchor="@id/bottom_app_bar"
-            android:layout_alignParentBottom="true" android:layout_marginBottom="41dp"/>
-
-    <android.support.design.bottomappbar.BottomAppBar
-            android:id="@+id/bottom_app_bar"
+            android:layout_weight=".15"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/mtrl_bottomappbar_height"
-            android:layout_gravity="bottom"
-            app:backgroundTint="@color/colorPrimary"
-            android:layout_alignParentBottom="true">
+            android:layout_height="match_parent">
 
-    </android.support.design.bottomappbar.BottomAppBar>
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_weight=".9"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"    >
 
-    <Button
-            android:text="Receitas"
-            android:layout_width="195dp"
-            android:layout_height="50dp"
-            android:id="@+id/buttonReceitas"
-            android:layout_marginTop="100dp"
-            android:layout_marginLeft="0dp"
-    />
 
-    <Button
-            android:text="Despesas"
-            android:layout_width="190dp"
-            android:layout_height="50dp"
-            android:id="@+id/buttonDespesas"
-            android:layout_marginTop="100dp"
-            android:layout_marginLeft="195dp"
-    />
-
-    <TextView
-            android:text="Saldo Atual"
-            android:layout_width="200dp"
-            android:layout_height="30dp"
-            android:textSize="25dp"
-            android:textAlignment="center"
-            android:layout_marginTop="60dp"
-            android:layout_marginLeft="90dp"
-            android:textColor="@color/colorPrimary"
-            android:id="@+id/textView"
-    />
-
-    <TextView
-            android:text="R$0,00"
-            android:layout_width="200dp"
-            android:layout_height="30dp"
-            android:textSize="25dp"
-            android:textAlignment="center"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="90dp"
-            android:textColor="@color/colorPrimary"
-            android:id="@+id/textView2"
-    />
-
-</RelativeLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <LinearLayout
+                    android:layout_weight=".2"
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" app:srcCompat="@drawable/ic_home_black_40dp"
+                        android:id="@+id/imageViewHome" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_weight=".2"
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_format_list_bulleted_black_40dp"
+                        android:id="@+id/imageViewList" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_weight=".2"
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" app:srcCompat="@drawable/ic_add_circle_black_40dp"
+                        android:id="@+id/imageViewAdd" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_weight=".2"
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" app:srcCompat="@drawable/ic_person_black_40dp"
+                        android:id="@+id/imageViewPerfil" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_weight=".2"
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" app:srcCompat="@drawable/ic_settings_black_40dp"
+                        android:id="@+id/imageViewSett" android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
