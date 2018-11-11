@@ -28,6 +28,8 @@
         </activity>
         <activity android:name=".KeyboardActivity">
         </activity>
+        <activity android:name=".Perfil">
+        </activity>
     </application>
 
 </manifest>
