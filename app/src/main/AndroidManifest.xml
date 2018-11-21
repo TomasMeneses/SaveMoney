@@ -30,6 +30,8 @@
         </activity>
         <activity android:name=".Perfil">
         </activity>
+        <activity android:name=".DespesasList">
+        </activity>
     </application>
 
 </manifest>

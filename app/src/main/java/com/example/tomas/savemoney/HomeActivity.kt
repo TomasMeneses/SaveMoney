@@ -1,12 +1,15 @@
 package com.example.tomas.savemoney
 
+import android.content.Context
 import android.graphics.Color
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_home.*
-import com.razerdp.widget.animatedpieview.AnimatedPieView
-import com.razerdp.widget.animatedpieview.AnimatedPieViewConfig
-import com.razerdp.widget.animatedpieview.data.SimplePieInfo
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.BaseAdapter
+import android.widget.ListView
+import android.widget.TextView
 
 class HomeActivity : AppCompatActivity() {
 
@@ -14,22 +17,39 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        desenharGrafico()
+        val listView = findViewById<ListView>(R.id.ListaPrincipal)
 
+        listView.adapter = MyCustomAdapter(this)
     }
 
-    fun desenharGrafico(){
-        var graficoPizza: AnimatedPieView = findViewById(R.id.graficoPizza)
-        var configuracao: AnimatedPieViewConfig
-        configuracao = AnimatedPieViewConfig()
-        configuracao.startAngle((-90.0).toFloat())
+    private class MyCustomAdapter(context: Context): BaseAdapter(){
 
-            configuracao.addData(SimplePieInfo(30.0, Color.parseColor("#ff0000"), "teste 1"))
-            configuracao.addData(SimplePieInfo(18.0, Color.parseColor("#00ff00"), "teste 2")).drawText(true)
-            configuracao.duration(2000).textSize(40.toFloat())
+        private val mContext: Context
 
-// The following two sentences can be replace directly 'mAnimatedPieView.start (config); '
-        graficoPizza.applyConfig(configuracao);
-        graficoPizza.start();
+        init {
+            mContext = context
+        }
+
+        override fun getCount(): Int {
+            return 5
+        }
+
+        override fun getItem(position: Int): Any {
+            return "Teste"
+        }
+
+        override fun getItemId(position: Int): Long {
+            return position.toLong()
+        }
+
+        override fun getView(position: Int, convertView: View?, viewGroup: ViewGroup?): View {
+            val layoutInflater = LayoutInflater.from(mContext)
+            val rowMain = layoutInflater.inflate(R.layout.receitas_despesas, viewGroup, false)
+            return rowMain
+
+//            val textView = TextView(mContext)
+//            textView.text = "Essa é minha linha"
+//            return textView
+        }
     }
 }

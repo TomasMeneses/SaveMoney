@@ -54,7 +54,8 @@
             android:layout_alignParentTop="true"
             android:id="@+id/textView4"
             android:layout_marginTop="325dp"
-            android:layout_toStartOf="@+id/textView" android:layout_marginEnd="-18dp"/>
+            android:layout_toStartOf="@+id/textView"
+            android:layout_marginEnd="-18dp"/>
     <TextView
             android:text="Sexo:"
             android:layout_width="wrap_content"
@@ -64,7 +65,8 @@
             android:textSize="16dp"
             android:id="@+id/textView5"
             android:layout_marginTop="366dp"
-            android:layout_toStartOf="@+id/textView" android:layout_marginEnd="-18dp"/>
+            android:layout_toStartOf="@+id/textView"
+            android:layout_marginEnd="-18dp"/>
     <Button
             android:text="Sobre"
             android:layout_width="wrap_content"

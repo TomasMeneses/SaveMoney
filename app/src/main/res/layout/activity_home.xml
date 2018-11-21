@@ -24,10 +24,13 @@
 
     >
 
-        <com.razerdp.widget.animatedpieview.AnimatedPieView
-
+        <ListView
+                android:id="@+id/ListaPrincipal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" android:id="@+id/graficoPizza"/>
+                android:layout_height="match_parent">
+
+        </ListView>
+
     </RelativeLayout>
     <RelativeLayout
             android:layout_weight=".6"
