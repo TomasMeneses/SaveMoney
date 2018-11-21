@@ -32,6 +32,8 @@
         </activity>
         <activity android:name=".DespesasList">
         </activity>
+        <activity android:name=".GraficosActivity">
+        </activity>
     </application>
 
 </manifest>
