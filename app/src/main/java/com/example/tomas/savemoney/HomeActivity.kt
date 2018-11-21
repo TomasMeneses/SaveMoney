@@ -1,6 +1,7 @@
 package com.example.tomas.savemoney
 
 import android.content.Context
+import android.content.Intent
 import android.graphics.Color
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -10,6 +11,7 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.ListView
 import android.widget.TextView
+import kotlinx.android.synthetic.main.activity_home.*
 
 class HomeActivity : AppCompatActivity() {
 
@@ -20,6 +22,15 @@ class HomeActivity : AppCompatActivity() {
         val listView = findViewById<ListView>(R.id.ListaPrincipal)
 
         listView.adapter = MyCustomAdapter(this)
+
+        imageViewAdd.setOnClickListener {
+            val i = Intent(this, KeyboardActivity::class.java)
+            startActivity(i)
+        }
+        imageViewList.setOnClickListener {
+            val i = Intent(this, GraficosActivity::class.java)
+            startActivity(i)
+        }
     }
 
     private class MyCustomAdapter(context: Context): BaseAdapter(){
