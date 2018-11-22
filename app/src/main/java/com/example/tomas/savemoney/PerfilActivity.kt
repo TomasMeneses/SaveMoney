@@ -3,7 +3,7 @@ package com.example.tomas.savemoney
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 
-class Perfil : AppCompatActivity() {
+class PerfilActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

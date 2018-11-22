@@ -28,7 +28,7 @@
         </activity>
         <activity android:name=".KeyboardActivity">
         </activity>
-        <activity android:name=".Perfil">
+        <activity android:name=".PerfilActivity">
         </activity>
         <activity android:name=".DespesasList">
         </activity>

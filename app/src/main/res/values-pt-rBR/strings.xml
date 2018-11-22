@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">savemoney</string>
+    <string name="datanascimento">Nascimento</string>
+    <string name="entrar">Entrar</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="ok">OK</string>
+    <string name="email">E-mail</string>
+    <string name="senha">Senha</string>
+    <string name="despesas">Despesas</string>
+    <string name="receita">Receita</string>
+    <string name="apagar">Apagar</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="title_activity_main">Atividade principal</string>
+    <string name="action_settings">Configurações</string>
+    <string name="action_example">Exemplo de ação</string>
+    <string name="navigation_drawer_close">Fechar gaveta de navegação</string>
+    <string name="navigation_drawer_open">Abrir gaveta de navegação</string>
+    <string name="title_section3">Sessão 3</string>
+    <string name="title_section2">Sessão 2</string>
+    <string name="title_section1">Sessão 1</string>
+    <string name="title_activity_settings">Atividades de configurações</string>
+    <string name="salvar">Salvar</string>
+    <string name="alterarfoto">Alterar Foto</string>
+    <string name="sobre">Sobre</string>
+    <string name="telefone">Telefone</string>
+    <string name="sexo">Sexo</string>
+</resources>

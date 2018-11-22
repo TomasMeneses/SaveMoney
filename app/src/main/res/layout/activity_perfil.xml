@@ -33,8 +33,9 @@
             android:textColor="#fdfcfc"
             android:textSize="16dp"
             android:id="@+id/textView2"
-            android:layout_marginTop="251dp"
-            android:layout_toStartOf="@+id/textView" android:layout_marginEnd="-18dp"/>
+            android:layout_marginTop="286dp"
+            android:layout_toStartOf="@+id/textView"
+            android:layout_marginEnd="-13dp"/>
     <TextView
             android:text="@string/datanascimento"
             android:layout_width="wrap_content"
@@ -43,8 +44,9 @@
             android:textColor="#fdfcfc"
             android:textSize="16dp"
             android:id="@+id/textView3"
-            android:layout_marginTop="276dp"
-            android:layout_toStartOf="@+id/textView" android:layout_marginEnd="-17dp"/>
+            android:layout_marginTop="327dp"
+            android:layout_toStartOf="@+id/textView"
+            android:layout_marginEnd="-15dp"/>
     <TextView
             android:text="@string/telefone"
             android:layout_width="wrap_content"
@@ -53,7 +55,7 @@
             android:textSize="16dp"
             android:layout_alignParentTop="true"
             android:id="@+id/textView4"
-            android:layout_marginTop="325dp"
+            android:layout_marginTop="364dp"
             android:layout_toStartOf="@+id/textView"
             android:layout_marginEnd="-18dp"/>
     <TextView
@@ -64,7 +66,7 @@
             android:textColor="#fdfcfc"
             android:textSize="16dp"
             android:id="@+id/textView5"
-            android:layout_marginTop="366dp"
+            android:layout_marginTop="401dp"
             android:layout_toStartOf="@+id/textView"
             android:layout_marginEnd="-18dp"/>
     <Button
@@ -72,10 +74,34 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:id="@+id/button13"
+            android:id="@+id/btnSobre"
             android:layout_marginBottom="18dp"
             android:layout_alignParentStart="true"
-            android:layout_marginLeft="17dp"
-            android:layout_marginStart="17dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginStart="22dp"
+            android:layout_alignParentLeft="true"/>
+
+    <Button
+            android:text="@string/alterarfoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/btnFoto"
+            android:layout_marginBottom="18dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="128dp"
+            android:layout_marginStart="128dp"
+            android:layout_alignParentLeft="true"/>
+
+    <Button
+            android:text="@string/salvar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/btnSalvar"
+            android:layout_marginBottom="18dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="278dp"
+            android:layout_marginStart="278dp"
             android:layout_alignParentLeft="true"/>
 </RelativeLayout>

@@ -51,8 +51,11 @@
             android:textSize="20dp"
             app:cornerRadius="15dp"
             android:layout_width="200dp"
-            android:layout_height="50dp" android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true" android:id="@+id/btnLogin" android:layout_marginBottom="131dp"/>
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/btnLogin"
+            android:layout_marginBottom="131dp"/>
 
     <android.support.design.button.MaterialButton
             android:text="@string/cadastrar"

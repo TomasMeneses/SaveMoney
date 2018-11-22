@@ -2,7 +2,6 @@ package com.example.tomas.savemoney
 
 import android.content.Context
 import android.content.Intent
-import android.graphics.Color
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,7 +9,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.ListView
-import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_home.*
 
 class HomeActivity : AppCompatActivity() {
@@ -27,9 +25,10 @@ class HomeActivity : AppCompatActivity() {
             val i = Intent(this, KeyboardActivity::class.java)
             startActivity(i)
         }
-        imageViewList.setOnClickListener {
-            val i = Intent(this, GraficosActivity::class.java)
-            startActivity(i)
+
+        imageViewPerfil.setOnClickListener {
+            val j = Intent(this, PerfilActivity::class.java)
+            startActivity(j)
         }
     }
 
