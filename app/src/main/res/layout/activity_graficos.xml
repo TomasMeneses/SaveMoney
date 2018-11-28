@@ -13,17 +13,82 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-    android:layout_weight="1">
+    android:layout_weight=".5">
     </LinearLayout>
     <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1">
+            android:layout_weight=".3">
         <com.razerdp.widget.animatedpieview.AnimatedPieView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/graficoPizza"
         />
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".6"
+            android:background="@color/white"
+                >
+        <LinearLayout
+                android:layout_weight=".2"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+            <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" app:srcCompat="@drawable/ic_home_black_40dp"
+                    android:id="@+id/imageViewHome" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+                android:layout_weight=".2"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+            <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/grafico_40dp"
+                    android:id="@+id/imageViewgraf" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+                android:layout_weight=".2"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+            <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_add_circle_black_40dp"
+                    android:id="@+id/imageViewAdd" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+                android:layout_weight=".2"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+            <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" app:srcCompat="@drawable/ic_person_black_40dp"
+                    android:id="@+id/imageViewPerfil" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+                android:layout_weight=".2"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+            <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" app:srcCompat="@drawable/ic_settings_black_40dp"
+                    android:id="@+id/imageViewSett" android:layout_weight="1"/>
+        </LinearLayout>
+
     </LinearLayout>
 </LinearLayout>

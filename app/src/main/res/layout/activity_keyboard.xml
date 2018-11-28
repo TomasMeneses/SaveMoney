@@ -1,60 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/gradient"
-        tools:context=".KeyboardActivity">
+        tools:context=".KeyboardActivity"
+        android:orientation="vertical"
+        android:background="@drawable/gradient" android:layout_width="match_parent">
 
-    <android.support.design.widget.TextInputEditText
-            android:layout_width="200dp"
-            android:layout_height="40dp"
-            app:cornerRadius="15dp"
-            android:inputType="numberDecimal"
-            android:textColorHint="#fdfcfc"
-            android:ems="10"
-            android:textSize="20dp"
-            android:background="#a72bd1e4"
-            android:drawableLeft="@drawable/ic_monetization_on_white_24dp"
-            android:id="@+id/editTxtReceita" android:hint="@string/receita"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="44dp"
-            android:layout_alignStart="@+id/mapView2"/>
-    <android.support.design.widget.TextInputEditText
-            android:layout_width="200dp"
-            android:layout_height="40dp"
-            app:cornerRadius="15dp"
-            android:inputType="numberDecimal"
-            android:textColorHint="#fdfcfc"
-            android:ems="10"
-            android:textSize="20dp"
-            android:background="#a72bd1e4"
-            android:drawableLeft="@drawable/ic_monetization_on_white_24dp"
-            android:id="@+id/editTxtDespesa" android:hint="@string/despesas"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="104dp" android:layout_alignStart="@+id/mapView2"
-            android:layout_marginStart="-1dp"/>
-    <android.support.design.button.MaterialButton
-            android:text="@string/ok"
-            android:background="@color/colorAccent"
-            android:textColor="#fdfdfd"
+    <RelativeLayout
 
-            android:textSize="20dp"
-            app:cornerRadius="15dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true" android:id="@+id/btnLogin" android:layout_marginBottom="497dp"
-            android:layout_alignParentStart="true" android:layout_marginLeft="47dp" android:layout_marginStart="47dp"
-            android:layout_alignParentLeft="true" android:layout_marginTop="22dp" android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true" android:layout_alignParentRight="true"
-            android:layout_marginRight="249dp" android:layout_marginEnd="249dp"/>
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".5">
 
-    <com.google.android.gms.maps.MapView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/mapView2"
-            android:layout_centerInParent="true"/>
 
-</RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+
+            android:layout_weight=".3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+    >
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_weight=".6"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"    >
+
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <LinearLayout
+                    android:layout_weight=".2"
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" app:srcCompat="@drawable/ic_home_black_40dp"
+                        android:id="@+id/imageViewHome" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_weight=".2"
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/grafico_40dp"
+                        android:id="@+id/imageViewgraf" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_weight=".2"
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_add_circle_black_40dp"
+                        android:id="@+id/imageViewAdd" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_weight=".2"
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" app:srcCompat="@drawable/ic_person_black_40dp"
+                        android:id="@+id/imageViewPerfil" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_weight=".2"
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" app:srcCompat="@drawable/ic_settings_black_40dp"
+                        android:id="@+id/imageViewSett" android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

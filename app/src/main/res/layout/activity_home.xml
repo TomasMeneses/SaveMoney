@@ -84,8 +84,8 @@
                         android:layout_gravity="center"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/ic_format_list_bulleted_black_40dp"
-                        android:id="@+id/imageViewList" android:layout_weight="1"/>
+                        app:srcCompat="@drawable/grafico_40dp"
+                        android:id="@+id/imageViewgraf" android:layout_weight="1"/>
             </LinearLayout>
             <LinearLayout
                     android:layout_weight=".2"

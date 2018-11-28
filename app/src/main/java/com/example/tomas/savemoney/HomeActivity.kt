@@ -30,6 +30,12 @@ class HomeActivity : AppCompatActivity() {
             val j = Intent(this, PerfilActivity::class.java)
             startActivity(j)
         }
+        imageViewgraf.setOnClickListener {
+            val j = Intent(this, GraficosActivity::class.java)
+            startActivity(j)
+        }
+
+
     }
 
     private class MyCustomAdapter(context: Context): BaseAdapter(){
