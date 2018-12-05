@@ -16,5 +16,9 @@ class LoginActivity : AppCompatActivity() {
             val i = Intent(this, HomeActivity::class.java)
             startActivity(i)
         }
+        btnCadastrar.setOnClickListener {
+            val i = Intent(this, CadastroActivity::class.java)
+            startActivity(i)
+        }
     }
 }
