@@ -9,7 +9,7 @@ class DespesasAdapter: RecyclerView.Adapter<CustomViewHolder>(){
 
     //numero de itens a serem exibidos por vez
     override fun getItemCount(): Int {
-        return 3
+        return 7
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CustomViewHolder {
@@ -19,7 +19,7 @@ class DespesasAdapter: RecyclerView.Adapter<CustomViewHolder>(){
         return CustomViewHolder(cellForRow)
     }
 
-    override fun onBindViewHolder(p0: CustomViewHolder, p1: Int) {
+    override fun onBindViewHolder(holder: CustomViewHolder?, position: Int) {
 
     }
 }
