@@ -21,6 +21,16 @@ class HomeActivity : AppCompatActivity() {
 
 
         recycleView_main.layoutManager = LinearLayoutManager(this)
-        recycleView_main.adapter = DespesasAdapter()
+
+        imageViewgraf.setOnClickListener {
+            val i = Intent(this, GraficosActivity::class.java)
+            startActivity(i)
+        }
+        imageViewPerfil.setOnClickListener {
+            val i = Intent(this, PerfilActivity::class.java)
+            startActivity(i)
+        }
+
+
     }
 }

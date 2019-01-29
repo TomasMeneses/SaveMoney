@@ -25,4 +25,9 @@
     <string name="sobre">About</string>
     <string name="alterarfoto">Change Photo</string>
     <string name="salvar">Save</string>
+    <string name="nome">Full Name</string>
+    <string name="confirmarsenha">" Confirm Password"</string>
+    <string name="preencher">Please, fill up the credentials</string>
+    <string name="erro">Error</string>
+    <string name="sucesso">Sucess!</string>
 </resources>

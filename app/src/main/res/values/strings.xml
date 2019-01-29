@@ -24,4 +24,9 @@
     <string name="sobre">Sobre</string>
     <string name="alterarfoto">Alterar Foto</string>
     <string name="salvar">Salvar</string>
+    <string name="nome">Nome Completo</string>
+    <string name="confirmarsenha">Confirmar Senha</string>
+    <string name="preencher">Por favor, preencha os campos corretamente</string>
+    <string name="erro">Error</string>
+    <string name="sucesso">Sucesso!</string>
 </resources>

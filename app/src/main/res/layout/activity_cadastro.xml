@@ -6,8 +6,44 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/gradient"
-        tools:context=".LoginActivity">
+        tools:context=".CadastroActivity">
 
+    <android.support.design.widget.TextInputEditText
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            app:cornerRadius="15dp"
+            android:inputType="textPassword"
+            android:textColorHint="#fdfcfc"
+            android:ems="10"
+            android:textSize="20dp"
+            android:background="#a72bd1e4"
+
+            android:id="@+id/editTxtSenhaConf" android:hint="@string/confirmarsenha"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="339dp"
+            android:layout_alignRight="@+id/editTxtMail" android:layout_marginRight="0dp"
+            android:layout_marginEnd="0dp" android:layout_alignEnd="@+id/editTxtMail"
+            android:layout_marginLeft="0dp" android:layout_marginStart="0dp"
+            android:layout_alignLeft="@+id/editTxtMail" android:layout_alignStart="@+id/editTxtMail"
+    />
+    <android.support.design.widget.TextInputEditText
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            app:cornerRadius="15dp"
+            android:inputType="textPassword"
+            android:textColorHint="#fdfcfc"
+            android:ems="10"
+            android:textSize="20dp"
+            android:background="#a72bd1e4"
+
+            android:id="@+id/editTxtSenha2" android:hint="@string/senha"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="285dp"
+            android:layout_alignRight="@+id/editTxtMail" android:layout_marginRight="-1dp"
+            android:layout_marginEnd="-1dp" android:layout_alignEnd="@+id/editTxtMail"
+            android:layout_marginLeft="1dp" android:layout_marginStart="1dp"
+            android:layout_alignLeft="@+id/editTxtMail" android:layout_alignStart="@+id/editTxtMail"
+    />
     <ImageView
             android:layout_width="140dp"
             android:layout_height="140dp"
@@ -25,21 +61,20 @@
             android:ems="10"
             android:textSize="20dp"
             android:background="#a72bd1e4"
-            android:drawableLeft="@drawable/ic_action_mail"
+
             android:id="@+id/editTxtMail" android:hint="@string/email"
             android:layout_centerHorizontal="true" android:layout_alignParentTop="true"
-            android:layout_marginTop="219dp"/>
+            android:layout_marginTop="232dp"/>
     <android.support.design.widget.TextInputEditText
             android:layout_width="200dp"
             android:layout_height="40dp"
             app:cornerRadius="15dp"
-
             android:inputType="textPassword"
             android:textColorHint="#fdfcfc"
             android:ems="10"
             android:textSize="20dp"
             android:background="#a72bd1e4"
-            android:drawableLeft="@drawable/ic_action_lock"
+
             android:id="@+id/editTxtSenha" android:hint="@string/senha"
             android:layout_alignParentTop="true"
             android:layout_marginTop="285dp"
@@ -48,19 +83,6 @@
             android:layout_marginLeft="1dp" android:layout_marginStart="1dp"
             android:layout_alignLeft="@+id/editTxtMail" android:layout_alignStart="@+id/editTxtMail"
     />
-    <android.support.design.button.MaterialButton
-            android:text="@string/entrar"
-            android:background="@color/colorAccent"
-            android:textColor="#fdfdfd"
-
-            android:textSize="20dp"
-            app:cornerRadius="15dp"
-            android:layout_width="200dp"
-            android:layout_height="50dp"
-            android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true"
-            android:id="@+id/btnLogin"
-            android:layout_marginBottom="131dp"/>
 
     <android.support.design.button.MaterialButton
             android:text="@string/cadastrar"

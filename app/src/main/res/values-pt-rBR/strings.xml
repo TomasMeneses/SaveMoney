@@ -25,4 +25,9 @@
     <string name="sobre">Sobre</string>
     <string name="telefone">Telefone</string>
     <string name="sexo">Sexo</string>
+    <string name="nome">Nome Completo</string>
+    <string name="confirmarsenha">Confirmar Senha</string>
+    <string name="preencher">Por favor, preencha os campos corretamente</string>
+    <string name="erro">Error</string>
+    <string name="sucesso">Sucesso!</string>
 </resources>
