@@ -30,4 +30,6 @@
     <string name="preencher">Please, fill up the credentials</string>
     <string name="erro">Error</string>
     <string name="sucesso">Sucess!</string>
+    <string name="financas">current balance of finances</string>
+    current balance of finances
 </resources>

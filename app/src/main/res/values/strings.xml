@@ -29,4 +29,7 @@
     <string name="preencher">Por favor, preencha os campos corretamente</string>
     <string name="erro">Error</string>
     <string name="sucesso">Sucesso!</string>
+    <string name="financas">Saldo Atual de Finanças</string>
+
+
 </resources>

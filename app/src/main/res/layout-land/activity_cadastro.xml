@@ -19,21 +19,20 @@
             android:background="#a72bd1e4"
 
             android:id="@+id/editTxtSenhaConf" android:hint="@string/confirmarsenha"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="339dp"
-            android:layout_alignRight="@+id/editTxtMail" android:layout_marginRight="0dp"
-            android:layout_marginEnd="0dp" android:layout_alignEnd="@+id/editTxtMail"
-            android:layout_marginLeft="0dp" android:layout_marginStart="0dp"
-            android:layout_alignLeft="@+id/editTxtMail" android:layout_alignStart="@+id/editTxtMail"
-    />
+            android:layout_above="@+id/btnCadastrar"
+            android:layout_marginStart="195dp" android:layout_marginBottom="9dp" android:layout_alignParentStart="true"
+            android:layout_marginLeft="195dp" android:layout_alignParentLeft="true" android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" android:layout_marginRight="198dp" android:layout_marginEnd="198dp"/>
     <ImageView
             android:layout_width="140dp"
             android:layout_height="140dp"
             app:srcCompat="@drawable/logo"
-            android:layout_centerHorizontal="true"
             android:layout_alignParentTop="true"
             android:id="@+id/imageView"
-            android:layout_marginTop="28dp"/>
+            android:layout_marginTop="0dp" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"
+            android:layout_marginRight="226dp" android:layout_marginEnd="226dp" android:layout_alignParentBottom="true"
+            android:layout_marginBottom="219dp" android:layout_alignParentStart="true" android:layout_marginLeft="226dp"
+            android:layout_marginStart="226dp" android:layout_alignParentLeft="true"/>
     <android.support.design.widget.TextInputEditText
             android:layout_width="200dp"
             android:layout_height="40dp"
@@ -45,8 +44,11 @@
             android:background="#a72bd1e4"
 
             android:id="@+id/editTxtMail" android:hint="@string/email"
-            android:layout_centerHorizontal="true" android:layout_alignParentTop="true"
-            android:layout_marginTop="232dp"/>
+            android:layout_alignParentRight="true" android:layout_alignParentEnd="true" android:layout_marginEnd="196dp"
+            android:layout_alignParentBottom="true" android:layout_marginBottom="169dp"
+            android:layout_marginRight="196dp" android:layout_alignParentStart="true" android:layout_marginLeft="196dp"
+            android:layout_marginStart="196dp" android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/imageView" android:layout_marginTop="150dp"/>
     <android.support.design.widget.TextInputEditText
             android:layout_width="200dp"
             android:layout_height="40dp"
@@ -59,12 +61,10 @@
 
             android:id="@+id/editTxtSenha" android:hint="@string/senha"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="285dp"
-            android:layout_alignRight="@+id/editTxtMail" android:layout_marginRight="-1dp"
-            android:layout_marginEnd="-1dp" android:layout_alignEnd="@+id/editTxtMail"
-            android:layout_marginLeft="1dp" android:layout_marginStart="1dp"
-            android:layout_alignLeft="@+id/editTxtMail" android:layout_alignStart="@+id/editTxtMail"
-    />
+            android:layout_marginTop="203dp" android:layout_alignParentStart="true" android:layout_marginStart="195dp"
+            android:layout_alignParentEnd="true" android:layout_alignParentRight="true"
+            android:layout_marginRight="197dp" android:layout_marginEnd="197dp"
+            android:layout_above="@+id/editTxtSenhaConf" android:layout_marginBottom="5dp"/>
 
     <android.support.design.button.MaterialButton
             android:text="@string/cadastrar"
@@ -73,6 +73,9 @@
             android:textSize="20dp"
             app:cornerRadius="15dp"
             android:layout_width="200dp"
-            android:layout_height="50dp" android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true" android:id="@+id/btnCadastrar" android:layout_marginBottom="74dp"/>
+            android:layout_height="50dp"
+            android:id="@+id/btnCadastrar"
+            android:layout_alignParentStart="true" android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp" android:layout_marginStart="194dp" android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" android:layout_marginRight="198dp" android:layout_marginEnd="198dp"/>
 </RelativeLayout>
