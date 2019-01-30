@@ -50,6 +50,11 @@ class HomeActivity : AppCompatActivity() {
             startActivity(i)
         }
 
+        imageViewAdd.setOnClickListener {
+            val i = Intent(this, ListaActivity::class.java)
+            startActivity(i)
+        }
+
 
 
     }

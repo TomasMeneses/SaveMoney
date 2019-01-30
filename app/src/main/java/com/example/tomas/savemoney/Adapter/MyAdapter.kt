@@ -38,10 +38,8 @@ class MyAdapter(private val umusuario: List<Users>, private val context: Context
             val id = itemView.userId
 
 
-
             email.text = note.email
             id.text = note.id
-
 
         }
 
